@@ -41,8 +41,8 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
-    # 'apps.blog',
-    # 'apps.category'
+    'apps.blog',
+    'apps.category'
 ]
 
 THIRD_PARTY_APPS = [
@@ -52,7 +52,7 @@ THIRD_PARTY_APPS = [
     'ckeditor_uploader',
 ]
 
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS
+INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS  + THIRD_PARTY_APPS
 
 CKEDITOR_CONFIGS = {
     'default': {
