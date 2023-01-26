@@ -20,9 +20,7 @@ DEBUG = True
 
 if not DEBUG:
     ALLOWED_HOSTS = [
-        "doubler.com",
-        ".doubler.com",
-        "www.doubler.com"
+       '.vercel.app'
     ]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
@@ -99,10 +97,10 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
